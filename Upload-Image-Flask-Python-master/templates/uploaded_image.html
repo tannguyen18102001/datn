@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Upload and Display Images with Flask and Python</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1  class= "text-center mt-5">Upload and Display Images with Flask and Python</h1>
+
+    <form method="POST" enctype="multipart/form-data" action="/" style="display: flex; 
+    justify-content: center; margin-top: 3cm;">
+        <input type="file" id="myFile" name="uploaded-file">
+        <input type="submit" value="Upload Another Image">
+    </form>
+  <br>
+  <div style="text-align: center; margin-top: 1cm;">
+    <p style="color:blue;">File uploaded successfully</p>
+    <form action="/predict" target="_blank">
+          <input type="submit" value="Display Image" />
+      </form>
+  </div>
+  </body>
+</html>
